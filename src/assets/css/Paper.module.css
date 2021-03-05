@@ -1,0 +1,88 @@
+.parent {
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  width: 100%;
+}
+
+.spinner {
+  width: 100%;
+  height: 100vh;
+  display: table;
+  text-align: center;
+  color: #1890ff;
+}
+
+.spinnerContent {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.paperContent {
+  margin: auto;
+  padding-top: 70px;
+  width: 90%;
+  display: table;
+}
+
+.paperBody {
+  float: left;
+  width: 70%;
+  background: transparent;
+}
+
+.options {
+  display: block;
+  padding: 10px;
+}
+
+.paperInformation {
+  float: right;
+  width: 30%;
+}
+
+.counterAnswered {
+  margin: 10px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: #adff2f;
+}
+
+.counterReview {
+  margin: 10px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: #d3adf7;
+}
+
+.counterNotAnswered {
+  margin: 10px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: #eee;
+}
+
+.paperNavgation {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 200px;
+  overflow-y: scroll;
+  background-color: white;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid rgb(235, 237, 240);
+  align-content: flex-start;
+}
+
+.paperButton {
+  padding-top: 70px;
+  text-align: center;
+}

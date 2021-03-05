@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px; */
+}
+
+.headerContent {
+  padding-right: 2%;
+  padding-left: 2%;
+  position: relative;
+}
+
+.headerItems {
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+}
+
+.logoTC {
+  max-width: 50px;
+}
+
+.userInfo {
+  float: right;
+}
