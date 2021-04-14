@@ -14,7 +14,7 @@ const questionnavigation = (props) => {
     // if (props.userAnswer === "" || props.userAnswer === null) { color = '#ffa39e' }
 
     if (props.userAnswer === undefined) { color = '#eee' }
-    else if (props.userAnswer !== "" && props.userAnswer !== null){ color = '#adff2f' }
+    else if (props.userAnswer !== "" && props.userAnswer !== null){ color = '#457DD1' }
 
     return (
         <div onClick={props.click} 

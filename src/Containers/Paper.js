@@ -298,6 +298,10 @@ class Paper extends Component {
 
               {/* body */}
               <div className={classes.paperContent}>
+              <div className={classes.paperTitle}>
+                <h1>BABAK PENYISIHAN EEC</h1>
+                <p> Nama Tim disini </p>
+              </div>
                 {/* body question answer */}
                 <div className={classes.paperBody}>
                   <p className={classes.currentQuestiontext}>

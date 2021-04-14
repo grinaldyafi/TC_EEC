@@ -22,15 +22,18 @@
 
 .paperContent {
   margin: auto;
-  padding-top: 70px;
+  /*padding-top: 70px;*/
   width: 90%;
   display: table;
 }
 
 .paperBody {
   float: left;
-  width: 70%;
+  width: 60%;
   background: transparent;
+  border: 1px solid #6F6F6F;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .options {
@@ -41,6 +44,9 @@
 .paperInformation {
   float: right;
   width: 30%;
+  border-radius: 10px;
+  border: 1px solid #6F6F6F;
+  padding: 20px;
 }
 
 .counterAnswered {
@@ -49,7 +55,8 @@
   width: 25px;
   height: 25px;
   text-align: center;
-  background-color: #adff2f;
+  background-color: #457DD1;
+  border-radius: 20px;
 }
 
 .counterReview {
@@ -58,7 +65,8 @@
   width: 25px;
   height: 25px;
   text-align: center;
-  background-color: #d3adf7;
+  background-color: #FAFF00;
+  border-radius: 20px;
 }
 
 .counterNotAnswered {
@@ -68,6 +76,7 @@
   height: 25px;
   text-align: center;
   background-color: #eee;
+  border-radius: 20px;
 }
 
 .paperNavgation {
@@ -80,9 +89,15 @@
   padding: 10px;
   border: 1px solid rgb(235, 237, 240);
   align-content: flex-start;
+  border-radius: 20px;
 }
 
 .paperButton {
-  padding-top: 70px;
+  padding-bottom: 5%;
   text-align: center;
+}
+
+.paperTitle {
+  margin-bottom: 3%;
+  margin-top: 3%;
 }

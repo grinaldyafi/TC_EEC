@@ -1,6 +1,7 @@
 .boxes {
   width: 40px;
   height: 40px;
+  border-radius: 20px;
   background-color: aliceblue;
   display: table;
   position: relative;
@@ -19,8 +20,9 @@
 .flag {
   width: 10px;
   height: 10px;
+  border-radius: 20px;
   top: 0;
   right: 0;
   position: absolute;
-  background-color: violet;
+  background-color: #FAFF00;
 }
