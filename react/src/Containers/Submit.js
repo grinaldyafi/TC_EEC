@@ -56,8 +56,8 @@ const Submit = (props) => {
               </div>
             </div>
             <form action={baseUrl + '/submitPaper'} method="POST" id="submitForm">
-                <input type="text" name="team_id" value={teamID} readOnly/>
-                <input type="text" name="answer" value={JSON.stringify(props.paper.answers)} readOnly/>
+                <input type="text" name="team_id" value={teamID} hidden/>
+                <input type="text" name="answer" value={JSON.stringify(props.paper.answers)} hidden/>
                 <Button type="primary" icon={<LeftOutlined />} size="small" onClick={props.backToPaper}>Back</Button>
                 <button type="submit" icon={<SaveOutlined />} size="small" >Submit</button>
             </form>
