@@ -101,3 +101,50 @@
   margin-bottom: 3%;
   margin-top: 3%;
 }
+
+.paperNavButtons {
+  display: inline-block;
+  width: 100%;
+}
+
+.submitbuttondiv {
+  align-self: center;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.submitbuttondiv Button{
+  height: 30px;
+  border-radius: 10px;
+  margin-right: 3%;
+}
+
+.questionpapercontrolsrowone {
+  display: inline-flex;
+}
+
+.prevbutton {
+  margin-top: 5%;
+  margin-right: 10%;
+}
+
+.nextbutton {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.prevbutton Button{
+  color: white;
+  height: 30px;
+  width: 100px;
+  background-color: #457DD1;
+  border-radius: 10px;
+}
+
+.nextbutton Button{
+  color: white;
+  height: 30px;
+  width: 100px;
+  background-color: #457DD1;
+  border-radius: 10px;
+}

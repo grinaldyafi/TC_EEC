@@ -354,7 +354,12 @@ class Paper extends Component {
                       {this.state.currentQuestion.answer4}
                     </label>
                   {/* </div> */}
-                </div>
+                  {/* tombol save and next dan clear question */}
+                  <div className= {classes.clearanswer}>
+                    <Button type="primary" icon={<RightSquareOutlined />} size="small" onClick={() => this.saveAnswer(this.state.selectedOption, this.state.currentQuestionIndex)}>Save and Next</Button>
+                    <Button type="primary" icon={<UndoOutlined />} size="small" onClick={() => this.clearAnswer(this.state.currentQuestionIndex)}>Clear answer</Button>
+                  </div>
+                </div>  
 
                 
                 {/* body - status */}
@@ -379,8 +384,30 @@ class Paper extends Component {
                       return <PaperNavigation click={() => this.questionNavigationClick(questionAnswerObj, questionIndex)} userAnswer={this.state.answers[questionIndex]} userFlag={this.state.flag[questionIndex]} key={questionIndex} questionIndex={questionIndex} currentQuestionIndex={this.state.currentQuestionIndex} />;
                     })}
                   </div>
-                </div>
 
+                  <div className={classes.paperNavButtons}>
+                    {/* tombol SUBMIT */}
+                    <div className={classes.submitbuttondiv}>
+                      <Button type="primary" icon={<SaveOutlined />} size="small" onClick={() => { this.props.submitPaper(this.state) }}>Finish</Button>
+                    </div>
+
+                    {/* tombol RAGU-RAGU */}
+                    <div className={classes.reviwebuttondiv}>
+                      {this.state.flag[this.state.currentQuestionIndex] !== 1 &&
+                        <Button type="primary" icon={<HistoryOutlined />} size="small"
+                          onClick={() => this.markForReview(this.state.currentQuestionIndex)}>
+                          ragu-ragu
+                        </Button>
+                      }
+                      {this.state.flag[this.state.currentQuestionIndex] === 1 &&
+                        <Button type="primary" icon={<HistoryOutlined />} size="small"
+                          onClick={() => this.clearReview(this.state.currentQuestionIndex)}>
+                          ragu-ragu
+                        </Button>
+                      }
+                    </div>
+                  </div>
+                </div>
               </div>
               
               <br />
@@ -388,26 +415,15 @@ class Paper extends Component {
               
               {/* body - panel button */}
               <div className={classes.paperButton}>
+
                 <div className={classes.questionpapercontrolsrowone}>
-                  <Button type="primary" icon={<RightSquareOutlined />} size="small" onClick={() => this.saveAnswer(this.state.selectedOption, this.state.currentQuestionIndex)}>Save and Next</Button>
-                  <Button type="primary" icon={<UndoOutlined />} size="small" onClick={() => this.clearAnswer(this.state.currentQuestionIndex)}>Clear</Button>
-                  {this.state.flag[this.state.currentQuestionIndex] !== 1 &&
-                    <Button type="primary" icon={<HistoryOutlined />} size="small"
-                      onClick={() => this.markForReview(this.state.currentQuestionIndex)}>
-                      Mark For Review
-                    </Button>
-                  }
-                  {this.state.flag[this.state.currentQuestionIndex] === 1 &&
-                    <Button type="primary" icon={<HistoryOutlined />} size="small"
-                      onClick={() => this.clearReview(this.state.currentQuestionIndex)}>
-                      Clear Review
-                    </Button>
-                  }
-                </div>
-                <div className={classes.questionpapercontrolsrowtwo}>
-                  <Button type="primary" icon={<LeftOutlined />} size="small" disabled={this.state.currentQuestionIndex === 0} onClick={() => this.previousQuestion(this.state.currentQuestionIndex)}>Previous</Button>
-                  <Button type="primary" icon={<RightOutlined />} size="small" disabled={this.state.currentQuestionIndex === this.state.questions.length - 1} onClick={() => this.nextQuestion(this.state.currentQuestionIndex)}>Next</Button>
-                  <Button type="primary" icon={<SaveOutlined />} size="small" onClick={() => { this.props.submitPaper(this.state) }}>Submit</Button>
+                  <div className={classes.prevbutton}> 
+                    <Button type="primary" icon={<LeftOutlined />} size="small" disabled={this.state.currentQuestionIndex === 0} onClick={() => this.previousQuestion(this.state.currentQuestionIndex)}>Previous</Button>
+                  </div>
+
+                  <div className={classes.nextbutton}>
+                    <Button type="primary" icon={<RightOutlined />} size="small" disabled={this.state.currentQuestionIndex === this.state.questions.length - 1} onClick={() => this.nextQuestion(this.state.currentQuestionIndex)}>Next</Button>
+                  </div>
                 </div>
               </div>
               
