@@ -22,7 +22,7 @@
             <div class="col-md-12">
                 <div class="logo">
                     <img src="./images/LOGO.png" alt="">
-                    <div class="title">EEC Menu</div>
+                    <div class="title">EEC Semifinal</div>
                 </div>
                 <div style="float: right;" id="namaku"> </div>
             </div>
@@ -32,11 +32,15 @@
     <!-- content -->
     <div class="container content"> 
         <div id="input_name" class="col-md-6 center">
+            <div class="text-white">
+                TOUR LAB
+				<div class="input-group mb-3 center">
+					<a href="/semifinal/question"><button class="tombol btn btn-outline-dark" type="submit" style="width: 100%"> LAB 1 </button></a>
+					<a href="/semifinal/question"><button class="tombol btn btn-outline-dark" type="submit" style="width: 100%"> LAB 2 </button></a>
+				</div>
+            </div>
             <div class="input-group mb-3 center">
-                <a href="/profile"><button class="tombol btn btn-outline-dark" type="button" style="width: 100%" > Penyisihan </button></a>
-                <a href="/semifinal"><button class="tombol btn btn-outline-dark" type="button" style="width: 100%"> Semifinal </button></a>
-                <button class="tombol btn btn-outline-dark" type="button" style="width: 100%" disabled> Final </button>
-                <a href="/logout"><button class="btn btn-danger" type="button" style="width: 100%"> Logout </button></a>
+                <a href="/"><button class="tombol btn btn-outline-dark" type="submit" style="width: 100%"> back </button></a>
             </div>
         </div>
     </div>

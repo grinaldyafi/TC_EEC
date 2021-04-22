@@ -10,8 +10,8 @@
     <!-- <link rel="icon" href="img/logo.png"> -->
  
     <!--  CSS -->
-    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="<?= base_url('/'); ?>/libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url('/'); ?>/index.css">
     
     <title>EEC</title>
 </head>
@@ -22,7 +22,7 @@
             <div class="col-md-12">
                 <div class="logo">
                     <img src="./images/LOGO.png" alt="">
-                    <div class="title">EEC Menu</div>
+                    <div class="title">EEC Semifinal</div>
                 </div>
                 <div style="float: right;" id="namaku"> </div>
             </div>
@@ -32,11 +32,11 @@
     <!-- content -->
     <div class="container content"> 
         <div id="input_name" class="col-md-6 center">
+            <div class="text-white">
+                SOAL
+            </div>
             <div class="input-group mb-3 center">
-                <a href="/profile"><button class="tombol btn btn-outline-dark" type="button" style="width: 100%" > Penyisihan </button></a>
-                <a href="/semifinal"><button class="tombol btn btn-outline-dark" type="button" style="width: 100%"> Semifinal </button></a>
-                <button class="tombol btn btn-outline-dark" type="button" style="width: 100%" disabled> Final </button>
-                <a href="/logout"><button class="btn btn-danger" type="button" style="width: 100%"> Logout </button></a>
+                <a href="/"><button class="tombol btn btn-outline-dark" type="submit" style="width: 100%"> back </button></a>
             </div>
         </div>
     </div>

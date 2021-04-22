@@ -38,6 +38,8 @@ $routes->get('/profile', 'Home::profile');
 $routes->get('/penyisihan', 'Home::penyisihan');
 $routes->get('/submit', 'Home::penyisihan');
 $routes->post('/submitPaper', 'Home::submitPaper');
+$routes->get('/semifinal', 'Semifinal::index');
+$routes->get('/semifinal/(:any)', 'Semifinal::$1');
 $routes->get('/(:any)', 'Home::index');
 
 /**
