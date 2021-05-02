@@ -1,47 +1,47 @@
 .paperSubmit {
-  margin-top: 30px;
-  width: 100%;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .paperInformation {
-  width: 100%;
+    width: 100%;
 }
 
 .counterAnswered {
-  margin: 10px;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  background-color: #adff2f;
+    margin: 10px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background-color: #9a9c95;
 }
 
 .counterReview {
-  margin: 10px;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  background-color: #d3adf7;
+    margin: 10px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background-color: #ebcf30;
 }
 
 .counterNotAnswered {
-  margin: 10px;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  background-color: #eee;
+    margin: 10px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background-color: #eee;
 }
 
 .paperNavgation {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 300px;
-  overflow-y: scroll;
-  background-color: white;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid rgb(0, 0, 0);
-  align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    overflow-y: scroll;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    align-content: flex-start;
 }

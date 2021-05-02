@@ -14,7 +14,7 @@ const Header = (props) => {
         var _day = _hour * 24;
         // const maxTime = new Date().setHours(23, 45, 0);
         const maxTime = new Date("July 21, 2022 01:15:00");
-        var getEmail = 'john'
+        var getEmail = 'budi john slur'
         setUsername(getEmail)
         const interval = setInterval(() => {
             var now = new Date();
@@ -33,19 +33,27 @@ const Header = (props) => {
         }, 1000);
     }, [username])
 
-    return (
-        <div className={classes.header}>
-            <div className={classes.headerContent}>
-                <div className={classes.headerItems}>
-                    <img src={logo} alt="technocorner-logo" className={classes.logoTC}/>
-                    <div className={classes.userInfo}>
-                        <p>{username}</p>
-                        <p>{hour + ':' + minute + ':' + second}</p>
-                        <a href={baseUrl+'/logout'}><button> Logout </button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return ( <
+        div className = { classes.header } >
+        <
+        div className = { classes.headerContent } >
+        <
+        div className = { classes.headerItems } >
+        <
+        img src = { logo }
+        alt = "technocorner-logo"
+        className = { classes.logoTC }
+        />  <
+        p className = { classes.infoTime } > < h3 > BABAK PENYISIHAN EEC < /h3><p> { hour + ':' + minute + ':' + second }</p > < /
+        p > < div className = { classes.userInfo } > <
+        p > { username } < /p>  <
+        a href = { baseUrl + '/logout' } > < button className = { classes.buttonDesign } > Logout < /button></a >
+
+        <
+        /div> < /
+        div > <
+        /div>  < /
+        div >
     );
 
 }

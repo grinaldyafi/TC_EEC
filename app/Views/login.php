@@ -21,10 +21,10 @@
         <div class="row"> 
             <div class="col-md-12">
                 <div class="logo">
-                    <img src="./images/LOGO.png" alt="">
-                    <div class="title">EEC Penyisihan</div>
+                    <img src="./images/LOGO.png" style="height: 150px"alt="">
+                    <div class="title" style="text-align:center; margin-left:70px; ">Electrical Engineering Competition<br> Technocorner 2021 <br>[Penyisihan] </div>
                 </div>
-                <div style="float: right;" id="namaku"> </div>
+                <div style="float: left;" id="namaku"> </div>
             </div>
         </div>
     </div>

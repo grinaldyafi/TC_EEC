@@ -33,7 +33,7 @@
     <div class="container content"> 
         <div id="input_name" class="col-md-6 center">
             <div class="text-white">
-                Team Info  <?= $status['team_id']; ?>  
+                <!--Team Info  </*?= $status['team_id']; ?>  --> 
                 <br />
                 Team Name : <?= $team_header['team_name']; ?>  
                 <br />
@@ -57,11 +57,11 @@
                 <br />
                 Quiz status: <br />
                 - start at: 15:00  <br />
-                - status:  <?php echo ($status['team_id']) ?  'finished' : 'disabled'; ?><br />
+                - status:  <!--</*?php echo ($status['team_id']) ?  'finished' : 'disabled'; ?>--><br />
             </div>
             <div class="input-group mb-3 center">
-                <a href="/penyisihan"><button class="tombol btn btn-outline-dark" type="submit" style="width: 100%" <?php if($status['team_id']) echo 'disabled'; ?> > start</button></a>
-                <a href="/"><button class="tombol btn btn-outline-dark" type="submit" style="width: 100%"> back </button></a>
+                <a href="/penyisihan"><button class="tombol btn btn-outline-dark" type="submit" style="width: 100%" > START</button></a>
+                <a href="/"><button class="tombol btn btn-outline-dark" type="submit" style="width: 100%;  background-color:grey;"> BACK </button></a>
             </div>
         </div>
     </div>
